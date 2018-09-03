@@ -1,0 +1,68 @@
+/*COLMARACADEMY stylesheet*/
+
+/* 0. Common rules section*/
+/* 1. Header section*/
+/* 1.1 Navigation bar*/
+/* 1.2 Introduction part*/
+/* 2. Practicing section*/
+/* 3. Learning section*/
+/* 4. Thesis section*/
+/* 5. Footer section*/
+/* 6. Media section*/
+
+/* 0. Common rules section*/
+
+html {
+  font-size: 18px;
+  /*font-family choose for th edeveloppement*/
+  font-family: Helvetica,sans-serif; /*see to add more font*/
+}
+
+.container {
+
+}
+.supporting {
+
+}
+
+.supporting figure {
+
+}
+
+.services {
+
+}
+
+.service  {
+
+}
+
+.service img {
+
+}
+
+.service .info {
+
+}
+
+.service .info span {
+
+}
+
+.service .info p {
+
+}
+
+.service .info a {
+  
+}
+
+
+/* 1. Header section*/
+/* 1.1 Navigation bar*/
+/* 1.2 Introduction part*/
+/* 2. Practicing section*/
+/* 3. Learning section*/
+/* 4. Thesis section*/
+/* 5. Footer section*/
+/* 6. Media section*/
