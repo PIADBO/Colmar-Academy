@@ -16,6 +16,7 @@ html {
   font-size: 16px;
   /*font-family choose for the developpement*/
   font-family: Helvetica,sans-serif; /*see to add more font*/
+  color: gray; /*to improve*/
 }
 
 a {
@@ -34,30 +35,55 @@ a {
 }
 
 .supporting figure img {
-  margin: 2rem 0 2rem 1.5rem;
   width: 100%;
   height: auto;
   display: block;
+  margin: 2rem 0 2rem 1.5rem;
+}
+
+
+.supporting .text {
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .services {
   width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-left: 1.5rem;
 }
 
 .service  {
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
 }
 
-.service img {
+.service figure {
+  width: 40%;
+  height: auto;
+}
 
+.service figure img {
+  width: 90%;
+  height: auto;
+  display: block;
+  margin: 1rem 0 1rem 1rem;
 }
 
 .service .info {
+  width: 60%;
+  margin-left: 1rem;
 
 }
 
 .service .info span {
-
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .service .info p {
@@ -65,7 +91,8 @@ a {
 }
 
 .service .info a {
-
+  color: blue;
+  font-weight: bold;
 }
 
 
@@ -74,6 +101,8 @@ a {
 .container.header {
   flex-direction: column;
 }
+
+/* 1.1 Navigation bar*/
 
 nav {
   width: 100%;
@@ -86,6 +115,7 @@ nav {
 .school {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
 }
 
 .school img {
@@ -100,8 +130,6 @@ nav {
   font-weight: bold;
 }
 
-
-
 nav ul {
   display: flex;
   justify-content: flex-end;
@@ -112,6 +140,8 @@ nav ul li {
   margin: 0 1rem;
 }
 
+/* 1.2 Introduction part*/
+
 .banner {
   background-color: #d3d3d3;
   display: flex;
@@ -119,7 +149,7 @@ nav ul li {
 }
 
 .banner .title {
-  margin-left: 3rem; /*original value x2*/
+  margin-left: 1.5rem;
   display:flex;
   flex-direction: column;
   justify-content: center;
@@ -149,13 +179,38 @@ nav ul li {
   color: white;
 }
 
-
-
-
-/* 1.1 Navigation bar*/
-/* 1.2 Introduction part*/
 /* 2. Practicing section*/
+
+.practicing .supporting .text h1 { /* see if it's a common rule*/
+  font-size: 2rem;
+  font-weight: bold;
+
+}
+
+.practicing .supporting .text p {
+  margin: 1.5rem 0 2rem 0;
+}
+
+.practicing .supporting .text span {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.service.our-guest-lecture {
+  background-color: #d3d3d3;
+}
+
+
 /* 3. Learning section*/
 /* 4. Thesis section*/
+
+.supporting figure video {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 2rem 0 2rem 1.5rem;
+}
+
 /* 5. Footer section*/
-/* 6. Media section*/
+/* 6. Media queries section*/
