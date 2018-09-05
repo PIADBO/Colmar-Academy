@@ -12,11 +12,10 @@
 
 /* 0. Common rules section*/
 
-html {
+html { /*TODO choice of font family and font size and color*/
   font-size: 16px;
   /*font-family choose for the developpement*/
   font-family: Helvetica,sans-serif; /*see to add more font*/
-  color: gray; /*to improve*/
 }
 
 a {
@@ -25,7 +24,7 @@ a {
 }
 
 .container {
-  width: 1140px;
+  width: 1200px; /*1140*/
   display:flex;
   margin: 0 auto;
 }
@@ -51,16 +50,18 @@ a {
   width: 40%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
+  justify-content: flex-start;
+  align-items: flex-start;
   margin-left: 1.5rem;
+  margin-top: 2rem;
 }
 
-.service  {
+.service  { /*TODO issue on size*/
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: 1px solid black;
+  width: 100%;
 }
 
 .service figure {
@@ -69,15 +70,15 @@ a {
 }
 
 .service figure img {
-  width: 90%;
+  width: 75%;
   height: auto;
   display: block;
   margin: 1rem 0 1rem 1rem;
 }
 
-.service .info {
+.service .info { /*TODO looks like not good*/
   width: 60%;
-  margin-left: 1rem;
+  margin-right: 1rem;
 
 }
 
@@ -87,18 +88,26 @@ a {
 }
 
 .service .info p {
-
+  font-size: 0.5rem;
 }
 
 .service .info a {
   color: blue;
   font-weight: bold;
+  font-size: 0.5rem;
+}
+
+.section-title {
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 2rem;
 }
 
 
 /* 1. Header section*/
 
-.container.header {
+.header {
   flex-direction: column;
 }
 
@@ -138,6 +147,7 @@ nav ul {
 
 nav ul li {
   margin: 0 1rem;
+  font-size: 0.751rem;
 }
 
 /* 1.2 Introduction part*/
@@ -182,17 +192,18 @@ nav ul li {
 /* 2. Practicing section*/
 
 .practicing .supporting .text h1 { /* see if it's a common rule*/
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-weight: bold;
 
 }
 
 .practicing .supporting .text p {
   margin: 1.5rem 0 2rem 0;
+  font-size: 0.75rem;
 }
 
 .practicing .supporting .text span {
-  font-size: 0.8rem;
+  font-size: 0.5rem;
   font-weight: bold;
   margin-top: 1rem;
 }
@@ -201,16 +212,77 @@ nav ul li {
   background-color: #d3d3d3;
 }
 
-
 /* 3. Learning section*/
+
+.learning {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+  background-color: #d3d3d3;
+}
+
+.learning .courses {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: auto 4.5rem 2rem 4.5rem;
+
+}
+
+.learning .cours {
+  flex: 1;
+  background-color: white;
+  height: 100%;
+}
+
+.learning .cours img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.learning .cours.mid {
+  margin: auto 2rem;
+}
+
+.learning .cours h4 {
+  margin: 1rem 1rem;
+}
+
+.learning .cours span {
+  margin: 0.5rem 1rem;
+}
+
+.learning .cours p {
+  margin: 0 1rem 1.5rem 1rem;
+}
+
+
 /* 4. Thesis section*/
 
-.supporting figure video {
+.supporting figure video { /*TODO adjust size of video*/
   width: 100%;
   height: auto;
   display: block;
   margin: 2rem 0 2rem 1.5rem;
 }
+/*TODO rules missing text*/
+/*TODO issue alignment of service Now and then*/
+/*TODO background color on the 1st service*/
 
 /* 5. Footer section*/
+
+.footer {
+  justify-content: space-between;
+}
+
+.footer span {
+  font-size: 1rem;
+  margin: 1rem 0 3rem 1.5rem;
+}
+
+.footer span .copyright {
+  font-size: 1rem;
+}
 /* 6. Media queries section*/
