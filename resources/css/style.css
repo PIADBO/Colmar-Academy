@@ -1,5 +1,4 @@
 /*COLMARACADEMY stylesheet*/
-
 /* 0. Common rules section*/
 /* 1. Header section*/
 /* 1.1 Navigation bar*/
@@ -9,40 +8,16 @@
 /* 4. Thesis section*/
 /* 5. Footer section*/
 /* 6. Media section*/
-
 /* 0. Common rules section*/
-
 /* latin */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
 
-/* latin */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
 
-/* latin */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-html { /*TODO choice of font family and font size and color*/
+html {
+  /*TODO choice of font family and font size and color*/
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
   /*font-family choose for the developpement*/
-  font-family: "Roboto",sans-serif; /*see to add more font*/
+  /*see to add more font*/
 }
 
 a {
@@ -51,24 +26,28 @@ a {
 }
 
 .container {
-  max-width: 1200px; /*1140*/ /*max added*/
-  display:flex;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;/*test*/
   margin: 0 auto;
 }
+
 .supporting {
-  max-width: 62%;
+  max-width: 55%;
   overflow: hidden;
 }
 
 .supporting figure {
   width: 96.5%;
+  margin-left: 1.5rem;
 }
 
 .supporting figure img {
   width: 100%;
   height: auto;
   display: block;
-  margin: 2rem 0 2rem 1.5rem;
+  /*margin: 2rem 0 2rem 1.5rem;*/
+  margin: 2rem 0;
 }
 
 .supporting .text {
@@ -77,15 +56,15 @@ a {
 }
 
 .services {
-  width: 38%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
-  margin: 2rem 1.5rem 0 1.5rem;
+  align-items: flex-end;
+  margin: 2rem 0 0 1.5rem;
 }
 
-.service  { /*TODO issue on size*/
+.service {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -94,21 +73,22 @@ a {
 }
 
 .service figure {
-  width: 40%;
+  width: 35%;
   height: auto;
+  margin-left: 1rem;
 }
 
 .service figure img {
-  width: 75%;
+  width: 100%;
   height: auto;
   display: block;
-  margin: 1rem 0 1rem 1rem;
+  margin: 1rem 0;
 }
 
-.service .info { /*TODO looks like not good*/
-  width: 60%;
-  margin-right: 1rem;
-
+.service .info {
+  /*TODO looks like not good*/
+  width: 65%;
+  margin: 0 1rem;
 }
 
 .service .info span {
@@ -133,15 +113,12 @@ a {
   padding-top: 2rem;
 }
 
-
 /* 1. Header section*/
-
 .header {
   flex-direction: column;
 }
 
 /* 1.1 Navigation bar*/
-
 nav {
   width: 100%;
   height: 4rem;
@@ -160,7 +137,7 @@ nav {
   height: 2rem;
   width: auto;
   margin-left: 1.5rem;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
   display: block;
 }
 
@@ -176,21 +153,24 @@ nav ul {
 
 nav ul li {
   margin: 0 1rem;
-  font-size: 0.751rem;
+  font-size: 1rem;
 }
 
 /* 1.2 Introduction part*/
-
 .banner {
   background-color: #d3d3d3;
 }
 
 .banner .services {
   justify-content: center;
+  align-items: flex-start;
+  width: 32%;
+  margin-right: 8%;
+  line-height: 1.2;
 }
 
 .banner h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
 }
@@ -202,9 +182,12 @@ nav ul li {
 
 .banner .btn-start-here {
   text-align: center;
-  border: 1px solid black;
-  padding: 2% 25%;
+  border: 2px solid black;
+  padding: 2% 40%;
   background-color: black;
+}
+.banner .btn-start-here:hover {
+  background-color: #d3d3d3;
 }
 
 .banner .btn-start-here a {
@@ -212,25 +195,24 @@ nav ul li {
 }
 
 .banner .btn-start-here a:hover {
-  font-weight: bold;
-  transition: font-weight 0.5s ease 200ms;
+  color: black;
+  transition: color 0.5s ease 200ms;
 }
 
 /* 2. Practicing section*/
-
-.practicing .supporting .text h1 { /* see if it's a common rule*/
-  font-size: 1.25rem;
+.practicing .supporting .text h1 {
+  /* see if it's a common rule*/
+  font-size: 2.4rem;
   font-weight: bold;
-
 }
 
 .practicing .supporting .text p {
   margin: 1.5rem 0 2rem 0;
-  font-size: 0.75rem;
+  font-size: 1.4rem;
 }
 
 .practicing .supporting .text span {
-  font-size: 0.5rem;
+  font-size: 1rem;
   font-weight: bold;
   margin-top: 1rem;
 }
@@ -240,7 +222,6 @@ nav ul li {
 }
 
 /* 3. Learning section*/
-
 .learning {
   flex-direction: column;
   align-items: center;
@@ -254,7 +235,6 @@ nav ul li {
   justify-content: space-between;
   align-items: flex-start;
   margin: auto 4.5rem 2rem 4.5rem;
-
 }
 
 .learning .cours {
@@ -285,21 +265,22 @@ nav ul li {
   margin: 0 1rem 1.5rem 1rem;
 }
 
-
 /* 4. Thesis section*/
-
-.supporting figure video { /*TODO adjust size of video*/
+.supporting figure video {
   width: 100%;
   height: auto;
   display: block;
-  margin: 2rem 0 2rem 1.5rem;
+  margin: 2rem 0;
 }
+
+.service.fisma {
+  background-color: #d3d3d3;
+}
+
 /*TODO rules missing text*/
 /*TODO issue alignment of service Now and then*/
-/*TODO background color on the 1st service*/
 
 /* 5. Footer section*/
-
 .footer {
   justify-content: space-between;
 }
@@ -312,4 +293,5 @@ nav ul li {
 .footer span .copyright {
   font-size: 1rem;
 }
+
 /* 6. Media queries section*/
