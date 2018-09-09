@@ -18,7 +18,7 @@ html {
   font-family: 'Open Sans', sans-serif;
   /*font-family: 'Roboto', sans-serif;*/
   font-size: 16px;
-  color: #000000a1;
+  color: #555555;
 }
 
 a {
@@ -138,7 +138,7 @@ a {
 }
 
 .service .info a {
-  color: #0079ffeb;
+  color: #0079ff;
   font-weight: bold;
   font-size: 16px;
   font-size: 1rem;
@@ -160,7 +160,7 @@ a {
 }
 
 .section-title.colored {
-  background-color: #ababab3d;
+  background-color: #e5e5e5;
 }
 
 .service figure img.mobile {
@@ -278,7 +278,7 @@ a {
   }
 
   .service .info a {
-    color: #0079ffeb;
+    color: #0079ff;
     font-weight: bold;
     font-size: 1.2rem;
   }
@@ -380,7 +380,7 @@ nav ul li {
 /**1.2 Introduction part**/
 
 .banner {
-  background-color: #ababab3d;
+  background-color: #e5e5e5;
 }
 
 .banner .mobile {
@@ -432,7 +432,7 @@ nav ul li {
   text-align: center;
   color: white;
   width: 100%;
-  background-color: #000000a1;
+  background-color: #555555;
   padding: 8px 0;
   padding: .5rem 0;
   margin-bottom: 32px;
@@ -442,7 +442,7 @@ nav ul li {
 .banner .btn-start-here:hover {
   text-align: center;
   color: black;
-  background-color: #abababab;
+  background-color: #ababab;
   -webkit-transition: color 0.5s ease 200ms, background-color 0.5s ease 200ms;
   transition: color 0.5s ease 200ms, background-color 0.5s ease 200ms
 }
@@ -516,7 +516,7 @@ nav ul li {
     text-align: center;
     color: white;
     width: 100%;
-    background-color: #000000a1;
+    background-color: #555555;
     padding: 1rem 0;
     margin-bottom: 2rem;
   }
@@ -556,7 +556,7 @@ nav ul li {
 }
 
 .service.our-guest-lecture {
-  background-color: #ababab3d;
+  background-color: #e5e5e5;
 }
 
 /***********************************************Practicing section**MQ start*/
@@ -590,7 +590,7 @@ nav ul li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #ababab3d;
+  background-color: #e5e5e5;
   padding-bottom: 16px;
   padding-bottom: 1rem;
 }
@@ -674,8 +674,8 @@ nav ul li {
   .learning.mobile ul li {
     padding: 1rem 0 1.5rem 1rem;
     margin-bottom: 0.5rem;
-    background-color: #ababab7d;
-    color: #000000a1;
+    background-color: #cccccc;
+    color: #555555;
     font-size: 1.5rem;
     font-weight: 600;
   }
@@ -716,7 +716,7 @@ nav ul li {
  }
 
 .service.fisma {
-  background-color: #ababab3d;
+  background-color: #e5e5e5;
 }
 
 /***********************************************Thesis section**MQ start*/
