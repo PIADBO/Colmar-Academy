@@ -1,16 +1,18 @@
-/*COLMARACADEMY stylesheet*/
-/* 0. Common rules section*/
-/* 1. Header section*/
-/* 1.1 Navigation bar*/
-/* 1.2 Introduction part*/
-/* 2. Practicing section*/
-/* 3. Learning section*/
-/* 4. Thesis section*/
-/* 5. Footer section*/
-/* 6. Media section*/
+/**COLMARACADEMY stylesheet**/
+
+/**0. Common rules section**/
+/**1. Header section**/
+  /**1.1 Navigation bar**/
+  /**1.2 Introduction part**/
+/**2. Practicing section**/
+/**3. Learning section**/
+/**4. Thesis section**/
+/**5. Footer section**/
 
 
-/* 0. Common rules section*/
+/***************************/
+/**0. Common rules section**/
+/***************************/
 
 html {
   font-family: 'Open Sans', sans-serif;
@@ -127,10 +129,10 @@ a {
   display: none;
 }
 
-/***********************************************************MQ start*/
+/*********************************************Common rules**MQ start*/
+
 @media only screen and (max-width: 750px) {
 
-/*Common rules*/
   .container {
     max-width: 100%;
     display: flex;
@@ -231,14 +233,17 @@ a {
   }
 }
 
-/***********************************************************MQ end*/
+/***********************************************Common rules**MQ end*/
 
-/* 1. Header section*/
+/**********************/
+/**1. Header section**/
+/*********************/
+
 .header {
   flex-direction: column;
 }
 
-/* 1.1 Navigation bar*/
+/**1.1 Navigation bar**/
 
 nav.mobile {
   display: none;
@@ -281,7 +286,8 @@ nav ul li {
   font-size: 1rem;
 }
 
-/* 1.2 Introduction part*/
+/**1.2 Introduction part**/
+
 .banner {
   background-color: #ababab3d;
 }
@@ -336,9 +342,11 @@ nav ul li {
   font-weight: bold;
 }
 
-/***********************************************************MQ start*/
+/***********************************************Header section**MQ start*/
+
 @media only screen and (max-width: 750px) {
-    /* 1.1 navigation bar*/
+
+    /* Media query: Navigation bar*/
 
   nav.computer {
     display: none;
@@ -356,7 +364,7 @@ nav ul li {
     align-items: center;
   }
 
-    /* 1.2 Introduction part*/
+    /* Media query: Introduction part*/
 
   .banner .mobile {
     display: block;
@@ -395,9 +403,12 @@ nav ul li {
     margin: 1.5rem auto 2rem auto;
   }
 }
-/***********************************************************MQ end*/
 
-/* 2. Practicing section*/
+/***********************************************Header section**MQ end*/
+
+/*************************/
+/**2. Practicing section**/
+/*************************/
 
 .practicing .supporting .text h2 { /*TODO see if common rule*/
   font-size: 2.3rem;
@@ -418,9 +429,10 @@ nav ul li {
 .service.our-guest-lecture {
   background-color: #ababab3d;
 }
-/***********************************************************MQ start*/
+
+/***********************************************Practicing section**MQ start*/
+
 @media only screen and (max-width: 750px) {
-  /* 2. Practicing section*/
 
   .practicing .supporting {
     display: none;
@@ -430,8 +442,13 @@ nav ul li {
     background-color: white;
   }
 }
-/***********************************************************MQ end*/
-/* 3. Learning section*/
+
+/***********************************************Practicing section**MQ end*/
+
+/***********************/
+/**3. Learning section**/
+/***********************/
+
 .learning {
   flex-direction: column;
   align-items: center;
@@ -484,10 +501,9 @@ nav ul li {
   display: none;
 }
 
-/***********************************************************MQ start*/
-@media only screen and (max-width: 750px) {
+/***********************************************Learning section**MQ start*/
 
-  /* 3. Learning section*/
+@media only screen and (max-width: 750px) {
 
   .learning.computer {
     display: none;
@@ -511,9 +527,13 @@ nav ul li {
   }
 
 }
-/***********************************************************MQ end*/
 
-/* 4. Thesis section*/
+/***********************************************Learning section**MQ end*/
+
+/**********************/
+/** 4. Thesis section**/
+/**********************/
+
 .supporting figure video {
   width: 100%;
   height: auto;
@@ -540,7 +560,8 @@ nav ul li {
   background-color: #ababab3d;
 }
 
-/***********************************************************MQ start*/
+/***********************************************Thesis section**MQ start*/
+
 @media only screen and (max-width: 750px) {
   /* 4. Thesis section*/
   .supporting figure video {
@@ -563,8 +584,13 @@ nav ul li {
   }
 
 }
-/***********************************************************MQ end*/
-/* 5. Footer section*/
+
+/***********************************************Thesis section**MQ end*/
+
+/*********************/
+/**5. Footer section**/
+/*********************/
+
 .footer {
   justify-content: space-between;
 }
@@ -574,9 +600,8 @@ nav ul li {
   margin: 1rem 1.5rem 3rem 1.5rem;
 }
 
+/***********************************************Footer section**MQ start*/
 
-
-/***********************************************************MQ start*/
 @media only screen and (max-width: 750px) {
 /* 5. Footer section*/
   .footer {
@@ -593,3 +618,5 @@ nav ul li {
   }
 
 }
+
+/***********************************************Footer section**MQ end*/
