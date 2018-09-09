@@ -12,16 +12,11 @@
 
 /* 0. Common rules section*/
 
-
-
 html {
-  /*TODO choice of font family and font size and color*/
   font-family: 'Open Sans', sans-serif;
   /*font-family: 'Roboto', sans-serif;*/
   font-size: 16px;
   color: #000000a1;
-  /*font-family choose for the developpement*/
-  /*see to add more font*/
 }
 
 a {
@@ -59,12 +54,9 @@ a {
   font-family: 'Roboto', sans-serif;
 }
 
-
-
 .supporting .text p {
   font-family: 'Roboto', sans-serif;
 }
-
 
 .services {
   width: 45%;
@@ -95,11 +87,9 @@ a {
   margin: 1rem 0;
 }
 
-
 .service .info {
-  /*TODO looks like not good*/
   width: 65%;
-  margin: 1rem 2rem 0 2rem;
+  margin: 0.5rem 2rem;
   line-height: 1.3;
 }
 
@@ -137,6 +127,111 @@ a {
   display: none;
 }
 
+/***********************************************************MQ start*/
+@media only screen and (max-width: 750px) {
+
+/*Common rules*/
+  .container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .supporting {
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0 0;
+  }
+
+  .supporting figure {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .supporting figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 0;
+  }
+
+  .supporting .text {
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .services {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0;
+  }
+
+  .service {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .service figure {
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .service figure img.mobile {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 5% 0;
+    margin: 0 0;
+  }
+
+  .service figure img.computer {
+    display: none;
+  }
+
+  .service .info {
+    width: 80%;
+    margin: 0 auto 4rem auto;
+  }
+
+  .service .info span {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .service .info p {
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+    font-weight: 600;
+  }
+
+  .service .info a {
+    color: #0079ffeb;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .section-title {
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .section-title.colored {
+    background-color: white;
+  }
+}
+
+/***********************************************************MQ end*/
 
 /* 1. Header section*/
 .header {
@@ -144,6 +239,11 @@ a {
 }
 
 /* 1.1 Navigation bar*/
+
+nav.mobile {
+  display: none;
+}
+
 nav {
   width: 100%;
   height: 4rem;
@@ -236,10 +336,70 @@ nav ul li {
   font-weight: bold;
 }
 
+/***********************************************************MQ start*/
+@media only screen and (max-width: 750px) {
+    /* 1.1 navigation bar*/
+
+  nav.computer {
+    display: none;
+  }
+
+  nav.mobile {
+    display: block;
+  }
+
+  nav.mobile ul {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+    /* 1.2 Introduction part*/
+
+  .banner .mobile {
+    display: block;
+  }
+
+  .banner .computer {
+    display: none;
+  }
+
+  .banner .services {
+    width: 90%;
+    line-height: 1.2;
+    margin: 2rem auto;
+  }
+
+  .banner .main-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+  }
+
+  .banner .btn-start-here {
+    text-align: center;
+    color: white;
+    width: 100%;
+    background-color: #000000a1;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+  }
+
+  .banner .btn-start-here a{
+    text-align: center;
+    padding: 1rem 3rem;
+    margin: 1.5rem auto 2rem auto;
+  }
+}
+/***********************************************************MQ end*/
 
 /* 2. Practicing section*/
-.practicing .supporting .text h2 {
-  /* see if it's a common rule*/
+
+.practicing .supporting .text h2 { /*TODO see if common rule*/
   font-size: 2.3rem;
   font-weight: bold;
 }
@@ -258,7 +418,19 @@ nav ul li {
 .service.our-guest-lecture {
   background-color: #ababab3d;
 }
+/***********************************************************MQ start*/
+@media only screen and (max-width: 750px) {
+  /* 2. Practicing section*/
 
+  .practicing .supporting {
+    display: none;
+  }
+
+  .service.our-guest-lecture {
+    background-color: white;
+  }
+}
+/***********************************************************MQ end*/
 /* 3. Learning section*/
 .learning {
   flex-direction: column;
@@ -312,6 +484,35 @@ nav ul li {
   display: none;
 }
 
+/***********************************************************MQ start*/
+@media only screen and (max-width: 750px) {
+
+  /* 3. Learning section*/
+
+  .learning.computer {
+    display: none;
+  }
+
+  .learning.mobile {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    margin-bottom: 2rem;
+  }
+
+  .learning.mobile ul li {
+    padding: 1rem 0 1.5rem 1rem;
+    margin-bottom: 0.5rem;
+    background-color: #ababab7d;
+    color: #000000a1;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+}
+/***********************************************************MQ end*/
+
 /* 4. Thesis section*/
 .supporting figure video {
   width: 100%;
@@ -339,183 +540,14 @@ nav ul li {
   background-color: #ababab3d;
 }
 
-.
-
-/*TODO rules missing text*/
-/*TODO issue alignment of service Now and then*/
-
-/* 5. Footer section*/
-.footer {
-  justify-content: space-between;
-}
-
-.footer span {
-  font-size: 1rem;
-  margin: 1rem 1.5rem 3rem 1.5rem;
-}
-
-.footer span .copyright {
-  font-size: 1rem;
-}
-
-/* 6. Media queries section*/
-
+/***********************************************************MQ start*/
 @media only screen and (max-width: 750px) {
-
-/*Common rules*/
-  .container {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .supporting {
-    max-width: 100%;
-    overflow: hidden;
-    margin: 0 0;
-  }
-
-  .supporting figure {
-    width: 100%;
-    margin-left: 0;
-  }
-
-  .supporting figure img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 0;
-  }
-
-  .supporting .text {
-    margin-left: 1.5rem;
-    margin-bottom: 2rem;
-  }
-
-  .services {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0 0;
-  }
-
-  .service {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid black;
-    width: 100%;
-  }
-
-  .service figure {
-    width: 90%;
-    height: auto;
-    overflow: hidden;
-    margin: 0 auto;
-  }
-
-  .service figure img.mobile {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 5% 0;
-  }
-
-  .service figure img.computer {
-    display: none;
-  }
-
-  .service .info {
-    /*TODO looks like not good*/
-    width: 100%;
-    margin: 0 1rem;
-  }
-
-  .service .info span {
-    font-size: 1rem;
-    font-weight: bold;
-  }
-
-  .service .info p {
-    font-size: 0.5rem;
-  }
-
-  .service .info a {
-    color: blue;
-    font-weight: bold;
-    font-size: 0.5rem;
-  }
-
-  .section-title {
-    justify-content: center;
-    font-size: 2rem;
-    font-weight: bold;
-    padding-top: 2rem;
-  }
-
-  /* 1.2 Introduction part*/
-
-  .banner .mobile {
-    display: block;
-  }
-
-  .banner .computer {
-    display: none;
-  }
-
-  .banner .services {
-    justify-content: center;
-    align-items: flex-start;
-    width: 90%;
-    line-height: 1.2;
-    margin: 0 auto;
-  }
-
-  .banner .btn-start-here a{
-    text-align: center;
-    padding: 0.5rem 3rem;
-    margin: 1.5rem auto 2rem auto;
-  }
-
-  /* 2. Practicing section*/
-
-  .practicing .supporting {
-    display: none;
-  }
-
-  .service.our-guest-lecture {
-    background-color: white;
-  }
-
-  /* 3. Learning section*/
-
-  .learning.computer {
-    display: none;
-  }
-
-  .learning.mobile {
-    display: block;
-    width: 90%;
-    margin: 0 auto;
-    background-color: white;
-  }
-
-  .learning.mobile ul li {
-    padding: 1rem 0 1.5rem 1rem;
-    margin-bottom: 0.5rem;
-    background-color: gray;
-  }
-
   /* 4. Thesis section*/
   .supporting figure video {
     width: 100%;
     height: auto;
     display: block;
-    margin: 2rem 0;
+    margin: 1rem 0 1.5rem 0;
   }
 
   .thesis .text {
@@ -530,6 +562,34 @@ nav ul li {
     display: none;
   }
 
-  /*TODO rules missing text*/
-  /*TODO issue alignment of service Now and then*/
+}
+/***********************************************************MQ end*/
+/* 5. Footer section*/
+.footer {
+  justify-content: space-between;
+}
+
+.footer span {
+  font-size: 1rem;
+  margin: 1rem 1.5rem 3rem 1.5rem;
+}
+
+
+
+/***********************************************************MQ start*/
+@media only screen and (max-width: 750px) {
+/* 5. Footer section*/
+  .footer {
+    justify-content: space-between;
+  }
+
+  .footer span {
+    font-size: 1rem;
+    margin: 1rem 1.5rem 1rem 1.5rem;
+  }
+
+  .footer span.computer {
+    display: none;
+  }
+
 }
