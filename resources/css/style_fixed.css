@@ -15,8 +15,7 @@
 /***************************/
 
 html {
-  font-family: 'Open Sans', sans-serif;
-  /*font-family: 'Roboto', sans-serif;*/
+  font-family: 'Open Sans', 'Tahoma', 'Arial', sans-serif;
   font-size: 16px;
   color: #555555;
 }
@@ -44,7 +43,6 @@ a {
 
 .supporting figure {
   width: 96.5%;
-  margin-left: 24px;
   margin-left: 1.5rem;
 }
 
@@ -52,20 +50,16 @@ a {
   width: 100%;
   height: auto;
   display: block;
-  margin: 32px 0;
   margin: 2rem 0;
 }
 
 .supporting .text {
-  margin-left: 24px;
   margin-left: 1.5rem;
-  margin-bottom: 32px;
   margin-bottom: 2rem;
-  font-family: 'Roboto', sans-serif;
 }
 
 .supporting .text p {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', 'Tahoma', 'Arial', sans-serif;
 }
 
 .services {
@@ -83,7 +77,6 @@ a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin: 16px 0 32px 24px;
   margin: 1rem 0 2rem 1.5rem;
 }
 
@@ -103,7 +96,6 @@ a {
 .service figure {
   width: 35%;
   height: auto;
-  margin-left: 16px;
   margin-left: 1rem;
 }
 
@@ -111,28 +103,23 @@ a {
   width: 100%;
   height: auto;
   display: block;
-  margin: 16px 0;
   margin: 1rem 0;
 }
 
 .service .info {
   width: 65%;
-  margin: 8px 32px;
   margin: 0.5rem 2rem;
   line-height: 1.3;
 }
 
 .service .info span {
-  font-size: 24px;
   font-size: 1.5rem;
   font-weight: bold;
 
 }
 
 .service .info p {
-  font-size: 16px;
   font-size: 1rem;
-  padding: 8px 0;
   padding: 0.5rem 0;
   font-weight: 600;
 }
@@ -140,7 +127,6 @@ a {
 .service .info a {
   color: #0079ff;
   font-weight: bold;
-  font-size: 16px;
   font-size: 1rem;
 }
 
@@ -152,10 +138,8 @@ a {
       -ms-flex-align: center;
               -ms-grid-row-align: center;
           align-items: center;
-  font-size: 32px;
   font-size: 2rem;
   font-weight: bold;
-  padding: 32px 0;
   padding: 2rem 0;
 }
 
@@ -165,6 +149,10 @@ a {
 
 .service figure img.mobile {
   display: none;
+}
+
+ul {
+  list-style-type: none;
 }
 
 /*********************************************Common rules**MQ start*/
@@ -187,7 +175,6 @@ a {
 
   .supporting {
     max-width: 100%;
-    overflow: hidden;
     margin: 0 0;
   }
 
@@ -197,31 +184,14 @@ a {
   }
 
   .supporting figure img {
-    width: 100%;
-    height: auto;
-    display: block;
     margin: 0 0;
-  }
-
-  .supporting .text {
-    margin-left: 1.5rem;
-    margin-bottom: 2rem;
   }
 
   .services {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
+                -ms-grid-row-align: center;
             align-items: center;
     margin: 0 0;
   }
@@ -268,18 +238,13 @@ a {
 
   .service .info span {
     font-size: 2rem;
-    font-weight: bold;
   }
 
   .service .info p {
     font-size: 1.2rem;
-    padding: 0.5rem 0;
-    font-weight: 600;
   }
 
   .service .info a {
-    color: #0079ff;
-    font-weight: bold;
     font-size: 1.2rem;
   }
 
@@ -287,10 +252,9 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    font-size: 2rem;
-    font-weight: bold;
     padding-top: 2rem;
     padding-bottom: 1rem;
+    font-size: 3rem;
   }
 
   .section-title.colored {
@@ -319,7 +283,6 @@ nav.mobile {
 
 nav {
   width: 100%;
-  height: 64px;
   height: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -345,12 +308,9 @@ nav {
 }
 
 .school img {
-  height: 32px;
   height: 2rem;
   width: auto;
-  margin-left: 24px;
   margin-left: 1.5rem;
-  margin-right: 8px;
   margin-right: 0.5rem;
   display: block;
 }
@@ -366,14 +326,11 @@ nav ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-right: 8px;
   margin-right: 0.5rem;
 }
 
 nav ul li {
-  margin: 0 16px;
   margin: 0 1rem;
-  font-size: 16px;
   font-size: 1rem;
 }
 
@@ -408,23 +365,18 @@ nav ul li {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin: 0 40px 0 16px;
   margin: 0 2.5rem 0 1rem;
 }
 
 .banner h1 {
-  font-size: 48px;
   font-size: 3rem;
   font-weight: 800;
-  margin-bottom: 40px;
   margin-bottom: 2.5rem;
 }
 
 .banner p {
-  font-size: 28px;
   font-size: 1.75rem;
   font-weight: 700;
-  margin-bottom: 32px;
   margin-bottom: 2rem;
 }
 
@@ -433,9 +385,7 @@ nav ul li {
   color: white;
   width: 100%;
   background-color: #555555;
-  padding: 8px 0;
   padding: .5rem 0;
-  margin-bottom: 32px;
   margin-bottom: 2rem;
 }
 
@@ -496,29 +446,12 @@ nav ul li {
   }
 
   .banner .main-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
     margin: 0 auto;
   }
 
   .banner .btn-start-here {
-    text-align: center;
-    color: white;
-    width: 100%;
-    background-color: #555555;
     padding: 1rem 0;
-    margin-bottom: 2rem;
+
   }
 
   .banner .btn-start-here a{
@@ -534,24 +467,19 @@ nav ul li {
 /**2. Practicing section**/
 /*************************/
 
-.practicing .supporting .text h2 { /*TODO see if common rule*/
-  font-size: 36.8px;
+.practicing .supporting .text h2 {
   font-size: 2.3rem;
   font-weight: bold;
 }
 
 .practicing .supporting .text p {
-  margin: 24px 32px 32px 0;
   margin: 1.5rem 2rem 2rem 0;
-  font-size: 19.2px;
   font-size: 1.2rem;
 }
 
 .practicing .supporting span {
-  font-size: 16px;
   font-size: 1rem;
   font-weight: bold;
-  margin-top: 16px;
   margin-top: 1rem;
 }
 
@@ -591,7 +519,6 @@ nav ul li {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #e5e5e5;
-  padding-bottom: 16px;
   padding-bottom: 1rem;
 }
 
@@ -605,7 +532,6 @@ nav ul li {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  margin: auto 72px 32px 72px;
   margin: auto 4.5rem 2rem 4.5rem;
 }
 
@@ -624,30 +550,23 @@ nav ul li {
 }
 
 .learning .cours.mid {
-  margin: auto 32px;
   margin: auto 2rem;
 }
 
 .learning .cours h4 {
-  margin: 24px 16px 16px 16px;
   margin: 1.5rem 1rem 1rem 1rem;
-  font-size: 24px;
   font-size: 1.5rem;
   font-weight: 700;
 }
 
 .learning .cours span {
-  margin: 8px 16px;
   margin: 0.5rem 1rem;
-  font-size: 19.2px;
   font-size: 1.2rem;
   display: block;
 }
 
 .learning .cours p {
-  margin: 0 16px 24px 16px;
   margin: 0 1rem 1.5rem 1rem;
-  font-size: 19.2px;
   font-size: 1.2rem;
 }
 
@@ -688,26 +607,21 @@ nav ul li {
 /** 4. Thesis section**/
 /**********************/
 
-.supporting figure video {
+ .thesis .supporting figure video {
   width: 100%;
   height: auto;
   display: block;
-  margin-bottom: 32px;
   margin-bottom: 2rem;
 }
 
-.supporting .text h3 {
-  font-size: 24px;
+ .thesis .supporting .text h3 {
   font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: 16px;
   margin-bottom: 1rem;
 }
 
-.supporting .text p {
-  margin: 24px 32px 32px 0;
+ .thesis .supporting .text p {
   margin: 1.5rem 2rem 2rem 0;
-  font-size: 19.2px;
   font-size: 1.2rem;
 }
 
@@ -715,30 +629,27 @@ nav ul li {
    margin-top: 0;
  }
 
-.service.fisma {
+ .thesis .service.fisma {
   background-color: #e5e5e5;
 }
 
 /***********************************************Thesis section**MQ start*/
 
 @media only screen and (max-width: 750px) {
-  /* 4. Thesis section*/
+
   .supporting figure video {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 1rem 0 1.5rem 0;
+    margin-bottom: 1.5rem;
   }
 
   .thesis .text {
     display: none;
   }
 
-  .service.fisma {
+   .thesis .service.fisma {
     display: none;
   }
 
-  .service.now-and-then {
+   .thesis .service.now-and-then {
     display: none;
   }
 
@@ -757,26 +668,13 @@ nav ul li {
 }
 
 .footer span {
-  font-size: 16px;
   font-size: 1rem;
-  margin: 16px 24px 48px 24px;
   margin: 1rem 1.5rem 3rem 1.5rem;
 }
 
 /***********************************************Footer section**MQ start*/
 
 @media only screen and (max-width: 750px) {
-/* 5. Footer section*/
-  .footer {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-
-  .footer span {
-    font-size: 1rem;
-    margin: 1rem 1.5rem 1rem 1.5rem;
-  }
 
   .footer span.computer {
     display: none;
